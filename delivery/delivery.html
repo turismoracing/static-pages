@@ -5,30 +5,56 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../dist/output.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
     <title>Delivery</title>
   </head>
-  <body>
-    <div>
-      <p>Experience maximum comfort, sooner.</p>
-      <p>Get your dek as soon as tomorrow:<br />Order by 10am</p>
+  <body class="font-display">
+    <div
+      class="bg-[#161616] bg-[url('img/background-box.png')] py-40 text-white bg-center grid grid-cols-2 grid-rows-1"
+    >
+      <div class="mx-12">
+        <p class="uppercase text-4xl font-bold">
+          Experience maximum <br />
+          comfort, sooner.
+        </p>
+        <p class="font-bold text-xl">
+          Get your dek as soon as tomorrow:<br />Order by 10am
+        </p>
+      </div>
     </div>
 
-    <div>
-      <img src="img/icons_1.svg" alt="cart icon" />
-      <p>Fus-free shipping</p>
-      <p>Receive your chair as soon as possible as we shipt direct to you.</p>
-      <img src="img/pointer-icon.svg" alt="ubication icon" />
-      <p>Track your order</p>
-      <p>Know exactly where your chair is with tracking details.</p>
-      <img src="img/plane-icon.svg" alt="airplane icon" />
-      <p>Get your chair shipped out today</p>
-      <p>Have your chair shipped out today when you order by 10am.</p>
-      <img src="img/map-icon.svg" alt="usa map" />
-      <p>To continental USA</p>
-      <p>
-        It's even easier to get your chair now as we have 3 regional US
-        warehouses.
-      </p>
+    <div class="py-40 px-12 grid grid-cols-4 grid-rows-1 gap-20">
+      <div class="w-10/12 flex flex-col items-center text-center">
+        <img class="w-1/2 mb-6" src="img/cart-icon.svg" alt="cart icon" />
+        <p class="uppercase text-2xl font-bold">Fus-free shipping</p>
+        <p class="text-thin text-xl">
+          Receive your chair as soon as possible as we shipt direct to you.
+        </p>
+      </div>
+      <div>
+        <img src="img/pointer-icon.svg" alt="ubication icon" />
+        <p>Track your order</p>
+        <p>Know exactly where your chair is with tracking details.</p>
+      </div>
+      <div>
+        <img src="img/plane-icon.svg" alt="airplane icon" />
+        <p>Get your chair shipped out today</p>
+        <p>Have your chair shipped out today when you order by 10am.</p>
+      </div>
+      <div>
+        <img src="img/map-icon.svg" alt="usa map" />
+        <p>To continental USA</p>
+        <p>
+          It's even easier to get your chair now as we have 3 regional US
+          warehouses.
+        </p>
+      </div>
     </div>
   </body>
 </html>

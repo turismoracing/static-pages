@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../dist/output.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Document</title>
+  </head>
+  <body class="bg-[#161616]">
+    <div
+      class="text-white p-8 max-w-7xl mx-auto flex flex-col md:grid md:grid-cols-4 md:gap-4"
+      id="footer"
+    >
+      <ul
+        class="font-light text-sm border-t border-white md:border-transparent"
+      >
+        <li class="py-4 text-xl font-normal">PRODUCTS</li>
+        <li class="hidden md:block pl-6 md:pl-0 py-2">
+          <a class="hover:text-[#5425de]" href="#">Infinity Desk</a>
+        </li>
+        <li class="hidden md:block pl-6 md:pl-0 py-2">
+          <a class="hover:text-[#5425de]" href="#">Infinity MAX</a>
+        </li>
+        <li class="hidden md:block pl-6 md:pl-0 py-2">
+          <a class="hover:text-[#5425de]" href="#">Evoluzione Chairs</a>
+        </li>
+        <li class="hidden md:block pl-6 md:pl-0 py-2">
+          <a class="hover:text-[#5425de]" href="#">Gaming Desks</a>
+        </li>
+        <li class="hidden md:block pl-6 md:pl-0 py-2">
+          <a class="hover:text-[#5425de]" href="#">Gaming Chairs</a>
+        </li>
+        <li class="hidden md:block pl-6 md:pl-0 pt-2 pb-4 md:py-2">
+          <a class="hover:text-[#5425de]" href="#">Accessories</a>
+        </li>
+      </ul>
+
+      <ul
+        class="font-light text-sm border-t border-white md:border-transparent"
+      >
+        <li class="py-4 text-xl font-normal">COMPANY</li>
+        <li class="hidden md:block pl-6 md:pl-0 py-2">
+          <a class="hover:text-[#5425de]" href="#">Our Story</a>
+        </li>
+        <li class="hidden md:block pl-6 md:pl-0 py-2">
+          <a class="hover:text-[#5425de]" href="#">Blog</a>
+        </li>
+        <li class="hidden md:block pl-6 md:pl-0 py-2">
+          <a class="hover:text-[#5425de]" href="#">Sponsorship</a>
+        </li>
+        <li class="hidden md:block pl-6 md:pl-0 py-2">
+          <a class="hover:text-[#5425de]" href="#">Affiliates</a>
+        </li>
+        <li class="hidden md:block pl-6 md:pl-0 pt-2 pb-4 md:py-2">
+          <a class="hover:text-[#5425de]" href="#">Manufacturing Standards</a>
+        </li>
+      </ul>
+
+      <ul
+        class="font-light text-sm border-t border-white md:border-transparent"
+      >
+        <li class="py-4 text-xl font-normal">SUPPORT</li>
+        <li class="hidden md:block pl-6 md:pl-0 py-2">
+          <a class="hover:text-[#5425de]" href="#">FAQ</a>
+        </li>
+        <li class="hidden md:block pl-6 md:pl-0 py-2">
+          <a class="hover:text-[#5425de]" href="#">Support</a>
+        </li>
+        <li class="hidden md:block pl-6 md:pl-0 py-2">
+          <a class="hover:text-[#5425de]" href="#">Contact</a>
+        </li>
+        <li class="hidden md:block pl-6 md:pl-0 py-2">
+          <a class="hover:text-[#5425de]" href="#">Warranty Terms</a>
+        </li>
+        <li class="hidden md:block pl-6 md:pl-0 py-2">
+          <a class="hover:text-[#5425de]" href="#">Returns</a>
+        </li>
+        <li class="hidden md:block pl-6 md:pl-0 pt-2 pb-4 md:py-2">
+          <a class="hover:text-[#5425de]" href="#">Shipping</a>
+        </li>
+      </ul>
+
+      <ul class="font-light text-sm">
+        <li
+          class="py-4 text-xl font-normal border-t border-white md:border-transparent"
+        >
+          STAY CONNECTED
+        </li>
+        <li class="hidden md:block px-4 md:px-0">
+          Subscribe to our email list and receive the lastest news, promotions
+          and exclusive offers.
+        </li>
+        <li
+          class="hidden md:flex flex flex-col px-8 text-center md:text-left md:px-0"
+        >
+          <input
+            class="border border-gray px-4 py-2 font-semibold mt-6"
+            type="text"
+            id="email"
+            name="email"
+            placeholder="Enter your email"
+          />
+          <input
+            class="bg-[#5425DE] font-bold text-md mt-6 text-white px-4 py-2"
+            type="button"
+            id="signup"
+            name="signup"
+            value="SIGN UP"
+          />
+        </li>
+      </ul>
+    </div>
+    <script>
+      let footer = document.getElementById("footer");
+
+      footer.addEventListener("click", showingMenu);
+
+      function showingMenu(e) {
+        if (e.target.tagName === "LI" && !e.target.firstElementChild) {
+          let ul = e.target.closest("ul");
+
+          for (let i = 1; i < ul.children.length; i++) {
+            ul.children[i].classList.toggle("hidden");
+            ul.children[i].classList.toggle("opacity-100");
+          }
+        }
+      }
+    </script>
+  </body>
+</html>

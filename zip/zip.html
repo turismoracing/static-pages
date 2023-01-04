@@ -38,37 +38,158 @@
     </div>
 
     <!-- Payment explanation. -->
-    <div class="py-20 grid -skew-y-3 bg-[#161616] -mt-14 text-white">
+    <div class="py-20 -skew-y-3 bg-[#161616] -mt-14 text-white">
       <div
-        class="border border-blue-700 mx-12 my-14 grid grid-cols-1 grid-rows-2 sm:grid-cols-2 sm:grid-rows-1 gap-8 justify-items-center skew-y-3"
+        class="mx-12 mb-14 lg:grid grid-cols-2 grid-rows-1 xl:gap-8 gap-2 justify-items-center skew-y-3"
       >
-        <div class="border border-orange-700 mx-12 p-6">
-          <p class="uppercase text-4xl font-bold mb-2 text-[#5425de]">
+        <div class="mx-12 p-6">
+          <p
+            class="text-center lg:text-left uppercase text-4xl font-bold mb-2 text-[#5425de]"
+          >
             Buy Now. Pay Later.
           </p>
-          <p class="text-4xl font-bold mb-2">
+          <p
+            class="text-center lg:text-left text-2xl md:text-4xl font-bold mb-2"
+          >
             Your order is split into 4 installments paid over six weeks
           </p>
-          <p class="md:font-light text-xl mb-8 font-medium">
+          <p
+            class="text-center lg:text-left md:font-light text-base md:text-xl mb-2 md:mb-8 font-medium"
+          >
             Your linked debit or credit card will be charged in 4 installments
             over 6 weeks.
           </p>
         </div>
-        <div class="border border-green-700">
-          <div class="flex-[0 0 auto] p-4 border-2 border-white flex">
-            <div class="flex">
+        <div class="w-full grid gap-6">
+          <div
+            class="mx-auto w-4/5 flex-[0 0 auto] px-4 xl:px-8 py-4 border-2 border-white flex justify-between items-center"
+          >
+            <div class="flex items-center">
               <img
-                class="w-[80px]"
+                class="w-[40px] sm:w-[60px] 2xl:w-[80px] mr-2 sm:mr-4"
                 src="img/checkmark-circle.svg"
                 alt="checkmark on circle"
               />
               <div>
-                <p>1st Paymern</p>
-                <p>Aug 11, 2022</p>
+                <p class="font-bold text-lg sm:text-xl 2xl:text-2xl">
+                  1st Payment
+                </p>
+                <p class="text-xs sm:text-sm">Aug 11, 2022</p>
               </div>
             </div>
-            <div>$112.50</div>
+            <div class="font-bold text-2xl sm:text-3xl 2xl:text-4xl">
+              $112.50
+            </div>
           </div>
+          <div
+            class="mx-auto w-4/5 flex-[0 0 auto] px-4 xl:px-8 py-4 border-2 border-white flex justify-between items-center"
+          >
+            <div class="flex items-center">
+              <img
+                class="w-[40px] sm:w-[60px] 2xl:w-[80px] mr-2 sm:mr-4"
+                src="img/checkmark-circle.svg"
+                alt="checkmark on circle"
+              />
+              <div>
+                <p class="font-bold text-lg sm:text-xl 2xl:text-2xl">
+                  2nd Payment
+                </p>
+                <p class="text-xs sm:text-sm">Aug 23, 2022</p>
+              </div>
+            </div>
+            <div class="font-bold text-2xl sm:text-3xl 2xl:text-4xl">
+              $112.50
+            </div>
+          </div>
+          <div
+            class="mx-auto w-4/5 flex-[0 0 auto] px-4 xl:px-8 py-4 border-2 border-[#5425de] bg-[#5425de] flex justify-between items-center"
+          >
+            <div class="flex items-center">
+              <img
+                class="w-[40px] sm:w-[60px] 2xl:w-[80px] mr-2 sm:mr-4"
+                src="img/dot-circle.svg"
+                alt="checkmark on circle"
+              />
+              <div>
+                <p class="font-bold text-lg sm:text-xl 2xl:text-2xl">
+                  3rd Payment
+                </p>
+                <p class="text-xs sm:text-sm">Sep 3, 2022</p>
+              </div>
+            </div>
+            <div class="font-bold text-2xl sm:text-3xl 2xl:text-4xl text-right">
+              PAY $112.50
+            </div>
+          </div>
+          <div
+            class="text-[#161616] mx-auto w-4/5 flex-[0 0 auto] px-4 xl:px-8 py-4 border-2 border-gray-400 bg-gray-400 flex justify-between items-center"
+          >
+            <div class="flex items-center">
+              <img
+                class="w-[40px] sm:w-[60px] 2xl:w-[80px] mr-2 sm:mr-4"
+                src="img/circle.svg"
+                alt="checkmark on circle"
+              />
+              <div>
+                <p class="font-bold text-lg sm:text-xl 2xl:text-2xl">
+                  Final Payment
+                </p>
+                <p class="text-xs sm:text-sm">Sep 17, 2022</p>
+              </div>
+            </div>
+            <div class="font-bold text-2xl sm:text-3xl 2xl:text-4xl">
+              $112.50
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="px-10 lg:flex justify-evenly text-center skew-y-3">
+        <div class="max-w-[400px] mx-auto lg:mx-0">
+          <img
+            class="w-[140px] xl:w-[240px] mx-auto my-6"
+            src="img/user-icon.svg"
+            alt="User on circle icon"
+          />
+          <p class="font-bold uppercase text-2xl xl:text-4xl mb-4">
+            Instant Approval
+          </p>
+          <p class="xl:text-xl font-light mb-4">
+            Forget long forms and waiting periods. Get approved instantly.
+          </p>
+        </div>
+        <div class="max-w-[400px] mx-auto lg:mx-0">
+          <img
+            class="w-[140px] xl:w-[240px] mx-auto my-6"
+            src="img/bill-icon.svg"
+            alt="Bill on circle icon"
+          />
+          <p class="font-bold uppercase text-2xl xl:text-4xl mb-4">
+            0% Interest
+          </p>
+          <p class="xl:text-xl font-light mb-4">
+            No hidden fees. No APR. Just transparent pricing.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- End section -->
+    <div class="overflow-hidden">
+      <div class="px-20 bg-white -skew-y-3 origin-bottom-right">
+        <div class="text-center py-40 skew-y-3">
+          <p
+            class="text-[#5425de] font-bold text-4xl sm:text-5xl uppercase my-4"
+          >
+            Why pay by installments?
+          </p>
+          <p class="font-light my-8 max-w-[800px] mx-auto">
+            We believe a good desk and chair are a long-term investment in
+            comfort and performance. As we spend so much of our lives seated on
+            our computer, the earlier you improve your productivity experience,
+            the better off you'll be in the long run. That's why we're giving
+            you the option of stretching out your purchase of our desks and
+            chairs into easy payments.
+          </p>
         </div>
       </div>
     </div>

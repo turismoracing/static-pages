@@ -525,6 +525,10 @@ video {
   bottom: 0px;
 }
 
+.right-0 {
+  right: 0px;
+}
+
 .mx-12 {
   margin-left: 3rem;
   margin-right: 3rem;
@@ -601,6 +605,10 @@ video {
   margin-right: 0.5rem;
 }
 
+.mt-2 {
+  margin-top: 0.5rem;
+}
+
 .block {
   display: block;
 }
@@ -621,10 +629,6 @@ video {
   min-height: 600px;
 }
 
-.min-h-\[800px\] {
-  min-height: 800px;
-}
-
 .w-10\/12 {
   width: 83.333333%;
 }
@@ -635,6 +639,10 @@ video {
 
 .w-1\/2 {
   width: 50%;
+}
+
+.w-1\/4 {
+  width: 25%;
 }
 
 .w-\[140px\] {
@@ -653,20 +661,9 @@ video {
   width: 40px;
 }
 
-.w-2\/6 {
-  width: 33.333333%;
-}
-
-.w-1\/4 {
-  width: 25%;
-}
-
-.w-10 {
-  width: 2.5rem;
-}
-
-.w-40 {
-  width: 10rem;
+.w-fit {
+  width: -moz-fit-content;
+  width: fit-content;
 }
 
 .max-w-md {
@@ -677,24 +674,16 @@ video {
   max-width: 80rem;
 }
 
-.max-w-\[400px\] {
-  max-width: 400px;
-}
-
 .max-w-\[800px\] {
   max-width: 800px;
 }
 
-.max-w-lg {
-  max-width: 32rem;
-}
-
-.max-w-xl {
-  max-width: 36rem;
-}
-
 .max-w-2xl {
   max-width: 42rem;
+}
+
+.max-w-\[400px\] {
+  max-width: 400px;
 }
 
 .origin-top-left {
@@ -739,6 +728,10 @@ video {
   flex-direction: column;
 }
 
+.items-end {
+  align-items: flex-end;
+}
+
 .items-center {
   align-items: center;
 }
@@ -775,8 +768,12 @@ video {
   gap: 1.5rem;
 }
 
-.gap-4 {
-  gap: 1rem;
+.self-end {
+  align-self: flex-end;
+}
+
+.self-center {
+  align-self: center;
 }
 
 .overflow-hidden {
@@ -848,6 +845,10 @@ video {
   background-color: transparent;
 }
 
+.bg-\[5425de\] {
+  background-color: 5425de;
+}
+
 .bg-opacity-50 {
   --tw-bg-opacity: 0.5;
 }
@@ -860,24 +861,16 @@ video {
   background-image: url('../delivery/img/background-boxes.png');
 }
 
+.bg-\[url\(\'\.\.\/extended-warranty\/img\/background-gamer\.png\'\)\] {
+  background-image: url('../extended-warranty/img/background-gamer.png');
+}
+
 .bg-\[url\(\'\.\.\/warranty\/img\/background-ray\.png\'\)\] {
   background-image: url('../warranty/img/background-ray.png');
 }
 
 .bg-\[url\(\'\.\.\/zip\/img\/background-arm\.png\'\)\] {
   background-image: url('../zip/img/background-arm.png');
-}
-
-.bg-\[url\(\'\.\.\/warranty\/img\/backgroun-gamer\.png\'\)\] {
-  background-image: url('../warranty/img/backgroun-gamer.png');
-}
-
-.bg-\[url\(\'\.\.\/warranty\/img\/background-gamer\.png\'\)\] {
-  background-image: url('../warranty/img/background-gamer.png');
-}
-
-.bg-\[url\(\'\.\.\/extended-warranty\/img\/background-gamer\.png\'\)\] {
-  background-image: url('../extended-warranty/img/background-gamer.png');
 }
 
 .bg-cover {
@@ -910,6 +903,10 @@ video {
 
 .p-16 {
   padding: 4rem;
+}
+
+.p-2 {
+  padding: 0.5rem;
 }
 
 .p-4 {
@@ -956,14 +953,14 @@ video {
   padding-right: 2rem;
 }
 
-.px-10 {
-  padding-left: 2.5rem;
-  padding-right: 2.5rem;
-}
-
 .px-20 {
   padding-left: 5rem;
   padding-right: 5rem;
+}
+
+.px-10 {
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
 }
 
 .pb-2 {
@@ -984,6 +981,22 @@ video {
 
 .pb-4 {
   padding-bottom: 1rem;
+}
+
+.pl-2 {
+  padding-left: 0.5rem;
+}
+
+.pr-4 {
+  padding-right: 1rem;
+}
+
+.pl-4 {
+  padding-left: 1rem;
+}
+
+.pr-6 {
+  padding-right: 1.5rem;
 }
 
 .text-center {
@@ -1062,6 +1075,18 @@ video {
   text-transform: uppercase;
 }
 
+.leading-relaxed {
+  line-height: 1.625;
+}
+
+.leading-loose {
+  line-height: 2;
+}
+
+.leading-10 {
+  line-height: 2.5rem;
+}
+
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
@@ -1075,26 +1100,6 @@ video {
 .text-\[\#161616\] {
   --tw-text-opacity: 1;
   color: rgb(22 22 22 / var(--tw-text-opacity));
-}
-
-.text-orange-700 {
-  --tw-text-opacity: 1;
-  color: rgb(194 65 12 / var(--tw-text-opacity));
-}
-
-.text-yellow-700 {
-  --tw-text-opacity: 1;
-  color: rgb(161 98 7 / var(--tw-text-opacity));
-}
-
-.placeholder-black::-moz-placeholder {
-  --tw-placeholder-opacity: 1;
-  color: rgb(0 0 0 / var(--tw-placeholder-opacity));
-}
-
-.placeholder-black::placeholder {
-  --tw-placeholder-opacity: 1;
-  color: rgb(0 0 0 / var(--tw-placeholder-opacity));
 }
 
 .placeholder-white::-moz-placeholder {
@@ -1209,6 +1214,10 @@ video {
 
   .md\:gap-4 {
     gap: 1rem;
+  }
+
+  .md\:self-end {
+    align-self: flex-end;
   }
 
   .md\:border-transparent {
@@ -1336,10 +1345,6 @@ video {
 
   .lg\:bg-top {
     background-position: top;
-  }
-
-  .lg\:bg-bottom {
-    background-position: bottom;
   }
 
   .lg\:text-left {

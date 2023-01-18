@@ -15,7 +15,7 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
       rel="stylesheet"
     />
-    <title>Warranty</title>
+    <title>Extended Warranty</title>
   </head>
 
   <body class="font-display">
@@ -101,6 +101,7 @@
         </div>
       </div>
     </div>
+
     <!-- Get in touch-->
     <div class="overflow-hidden">
       <div class="px-20 bg-[#161616] -skew-y-3 origin-bottom-right">
@@ -116,7 +117,7 @@
           </p>
           <form
             action="#"
-            class="border border-orange-700 flex flex-col gap-2 max-w-2xl mx-auto text-white font-medium"
+            class="flex flex-col gap-2 max-w-2xl mx-auto text-white font-medium"
           >
             <input
               type="text"
@@ -139,7 +140,11 @@
               placeholder="Order Number"
               class="border border-white bg-transparent px-4 py-2 placeholder-white"
             />
-            <select id="socialNetwork" name="social-network">
+            <select
+              id="socialNetwork"
+              name="social-network"
+              class="bg-[#5425de] px-4 py-2 font-bold"
+            >
               <option value="" disabled selected hidden>Please Select</option>
               <option value="facebook">Facebook</option>
               <option value="instagram">Instagram</option>
@@ -155,7 +160,11 @@
               placeholder="Link"
               class="border border-white bg-transparent px-4 py-2 placeholder-white"
             />
-            <input type="button" value="Submit" />
+            <input
+              type="button"
+              value="Submit"
+              class="mt-2 bg-[#5425de] font-bold uppercase w-fit self-center md:self-end px-24 md:px-3 py-2 text-lg cursor-pointer hover:bg-transparent transition-colors duration-300 ease-out border-2 border-[#5425de]"
+            />
           </form>
         </div>
       </div>
